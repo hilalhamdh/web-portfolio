@@ -3,7 +3,7 @@ import { aboutSection, AppText } from "../constans";
 
 const Aboutme = () => {
   return (
-    <div className="mt-36">
+    <div className="mt-36" id="about">
       <img
         src={wave}
         className="w-screen  absolute  object-cover h-10 sm:h-14 md:h-40 "

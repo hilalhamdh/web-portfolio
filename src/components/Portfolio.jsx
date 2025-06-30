@@ -66,7 +66,7 @@ const Portfolio = () => {
           >
             <img
               src={port.imageUrl}
-              className="h-[180px] object-cover rounded-lg"
+              className="h-[160px] md:h-[180px] object-cover rounded-lg"
             />
             <h1 className="text-[14px] group-hover:scale-110 mt-2 text-center  font-bold">
               {port.title}

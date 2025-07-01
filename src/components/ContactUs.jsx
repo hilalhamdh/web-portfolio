@@ -70,7 +70,7 @@ const ContactUs = () => {
                   type="text"
                   name="email"
                   placeholder="input your email..."
-                  className="border border-zinc-500 p-2 rounded-md"
+                  className="border border-purple-500 p-2 rounded-md"
                   required
                 />
               </div>
@@ -84,14 +84,14 @@ const ContactUs = () => {
                   cols={45}
                   rows={7}
                   placeholder="input your message..."
-                  className="border border-zinc-500 p-2 rounded-md"
+                  className="border border-purple-500 p-2 rounded-md"
                   required
                 ></textarea>
               </div>
               <div className="flex text-center">
                 <button
                   type="submit"
-                  className="bg-violet-700 p-3 flex items-center justify-center text-white rounded-lg w-full cursor-pointer border border-zinc-600 hover:bg-violet-500 text-center"
+                  className="bg-violet-700 p-3 flex items-center justify-center text-white rounded-lg w-full cursor-pointer border border-purple-600 hover:bg-violet-500 text-center"
                 >
                   Send Message <IoMdSend className="ml-2 h-6 w-6" />
                 </button>

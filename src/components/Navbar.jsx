@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 import { TfiAlignJustify, TfiClose } from "react-icons/tfi";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -16,20 +16,23 @@ const Navbar = () => {
         <div className="hidden md:flex">
           <ul className="flex items-center flex-row gap-4 font-semibold">
             <li className="mr-4 transition-all ease-in-out hover:scale-110">
-              <a href="/">Home</a>
+              <a href="home">Home</a>
             </li>
             <li className="mr-4 transition-all ease-in-out hover:scale-110">
-              <a href="">About Me</a>
+              <a href="about">About Me</a>
             </li>
 
             <li className="mr-4 transition-all ease-in-out hover:scale-110">
-              <a href="">Skills</a>
+              <a href="skills">Skills</a>
             </li>
             <li className="mr-4 transition-all ease-in-out hover:scale-110">
               <a href="">Portfolio</a>
             </li>
             <li className="mr-4 transition-all ease-in-out hover:scale-110">
-              <a href="">Contact Me</a>
+              <a href="contact">Contact Me</a>
+            </li>
+            <li className="mr-4 transition-all ease-in-out hover:scale-110">
+              <Link to="/">Logout</Link>
             </li>
           </ul>
         </div>
@@ -72,6 +75,11 @@ const Navbar = () => {
               <li className="p-3 transition-all ease-in-out hover:scale-110">
                 <a href="#contact" onClick={() => setToggle(false)}>
                   Contact Me
+                </a>
+              </li>
+              <li className="p-3 transition-all ease-in-out hover:scale-110">
+                <a href="/" onClick={() => setToggle(false)}>
+                  Logout
                 </a>
               </li>
             </ul>
